@@ -10,6 +10,10 @@ module.exports = {
       name: 'ember-build-flags',
       ext: 'js',
       toTree: function(tree) {
+        if (process.env.EMBER_ENV.toUpperCase() === 'PRODUCTION') {
+          return tree;
+        }
+
         var treeA = removeFile(tree, {
           srcFile: 'client/initializers/test-server.js',
         });
