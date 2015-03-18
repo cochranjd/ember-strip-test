@@ -10,7 +10,7 @@ module.exports = {
       name: 'ember-build-flags',
       ext: 'js',
       toTree: function(tree) {
-        if (process.env.EMBER_ENV.toUpperCase() === 'PRODUCTION') {
+        if (process.env.EMBER_ENV.toUpperCase() !== 'PRODUCTION') {
           return tree;
         }
 

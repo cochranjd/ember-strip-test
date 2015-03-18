@@ -1,6 +1,6 @@
 {
   "name": "ember-strip-test",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Strip the test and fixture data from build",
   "main": "index.js",
   "scripts": {
